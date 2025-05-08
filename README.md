@@ -1,13 +1,16 @@
-# Google Sheets Attendance App
+# Krishna Attendance Tracker
 
-A React application that allows you to view and manage attendance data using Google Sheets as a backend.
+A React application for tracking and managing ISKCON student attendance using Google Sheets as a backend.
 
 ## Features
 
-- View data from Google Sheets
-- Add new data to Google Sheets
-- Responsive design
-- Simple and intuitive interface
+- Google Sheets integration for storing attendance data
+- Google OAuth authentication for secure access
+- Record attendance for students by date
+- View and filter attendance records
+- Add, update, and delete student information
+- Responsive design for mobile and desktop
+- Krishna-themed UI elements
 
 ## Setup
 
@@ -54,18 +57,35 @@ npm run build
 
 The build files will be in the `dist` directory.
 
-## Notes on Google Sheets API
+## Live Demo
 
-This application uses a simplified approach to the Google Sheets API. In a production environment, you would want to:
-
-1. Use environment variables for API keys
-2. Implement proper OAuth2 authentication
-3. Add more robust error handling
-4. Consider using a backend service to proxy requests to Google Sheets API
+The application is deployed and available at: [https://Divyaakula28.github.io/krishna-attendance-tracker](https://Divyaakula28.github.io/krishna-attendance-tracker)
 
 ## Technologies Used
 
 - React
 - Vite
-- Axios
 - Google Sheets API
+- Google OAuth 2.0
+- FontAwesome icons
+- CSS3 with responsive design
+- Recharts for analytics
+
+## Deployment
+
+To deploy the application to GitHub Pages:
+
+```
+npm run deploy
+```
+
+This will build the application and deploy it to the `gh-pages` branch of your repository.
+
+## Notes on Google Sheets API
+
+This application uses Google OAuth2 for authentication with the Google Sheets API, providing:
+
+1. Secure access to Google Sheets data
+2. User-specific permissions
+3. Robust error handling
+4. Real-time data synchronization
