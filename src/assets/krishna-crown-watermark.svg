@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.08" fill="#1a237e">
+    <!-- Crown base -->
+    <path d="M256 150 L356 250 L356 350 L156 350 L156 250 Z" />
+    <!-- Crown jewel -->
+    <circle cx="256" cy="200" r="20" fill="#ffc107" />
+    <!-- Peacock feather -->
+    <path d="M256 150 C256 100, 256 50, 256 0 M256 0 C236 20, 216 40, 196 60 M256 0 C276 20, 296 40, 316 60" stroke-width="10" stroke="#1a237e" fill="none" />
+    <circle cx="196" cy="60" r="15" />
+    <circle cx="316" cy="60" r="15" />
+  </g>
+</svg>

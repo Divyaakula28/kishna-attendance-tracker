@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.08">
+    <!-- Namam (Tilak) -->
+    <path fill="#ffffff" d="M256 100 C200 100, 150 150, 150 250 C150 350, 200 400, 256 400 C312 400, 362 350, 362 250 C362 150, 312 100, 256 100 Z M256 150 C290 150, 312 180, 312 250 C312 320, 290 350, 256 350 C222 350, 200 320, 200 250 C200 180, 222 150, 256 150 Z" />
+    <path fill="#ff0000" d="M256 100 L256 400" stroke-width="30" stroke="#ff0000" />
+  </g>
+</svg>

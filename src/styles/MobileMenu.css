@@ -1,0 +1,91 @@
+/* Mobile Auth Styles */
+.mobile-auth-container {
+  display: none; /* Hidden by default, shown on mobile */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a237e; /* Krishna blue */
+  color: white;
+  z-index: 10000;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-bottom: 2px solid #ffd700; /* Krishna gold */
+}
+
+.mobile-auth-signed-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mobile-email {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #ffd700; /* Krishna gold */
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-sign-out {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffd700; /* Krishna gold */
+}
+
+.mobile-sign-in {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffd700; /* Krishna gold */
+}
+
+.krishna-icon {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/* Show mobile auth only on mobile devices */
+@media (max-width: 768px) {
+  .mobile-auth-container {
+    display: block;
+  }
+}

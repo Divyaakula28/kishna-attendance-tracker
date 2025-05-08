@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Krishna line art -->
+  <g fill="none" stroke="#ffffff" stroke-width="2">
+    <!-- Krishna's face -->
+    <circle cx="300" cy="200" r="70" />
+    
+    <!-- Krishna's crown with peacock feather -->
+    <path d="M250,140 C270,110 330,110 350,140" />
+    <path d="M300,110 C300,80 300,50 300,20" />
+    <path d="M300,20 C280,40 260,60 240,80" />
+    <path d="M300,20 C320,40 340,60 360,80" />
+    <circle cx="240" cy="80" r="15" />
+    <circle cx="360" cy="80" r="15" />
+    
+    <!-- Krishna's eyes -->
+    <ellipse cx="270" cy="190" rx="12" ry="8" />
+    <ellipse cx="330" cy="190" rx="12" ry="8" />
+    
+    <!-- Krishna's smile -->
+    <path d="M280,220 C290,230 310,230 320,220" />
+    
+    <!-- Krishna's flute -->
+    <line x1="200" y1="250" x2="400" y2="250" />
+    <circle cx="230" cy="250" r="5" />
+    <circle cx="270" cy="250" r="5" />
+    <circle cx="310" cy="250" r="5" />
+    <circle cx="350" cy="250" r="5" />
+    <circle cx="390" cy="250" r="5" />
+    
+    <!-- Krishna's body -->
+    <path d="M250,270 C250,350 280,400 300,450" />
+    <path d="M350,270 C350,350 320,400 300,450" />
+    
+    <!-- Krishna's arms -->
+    <path d="M250,270 C220,290 190,290 160,270" />
+    <path d="M350,270 C380,290 410,290 440,270" />
+    
+    <!-- Krishna's dhoti -->
+    <path d="M300,450 C270,500 250,550 250,580" />
+    <path d="M300,450 C330,500 350,550 350,580" />
+    
+    <!-- Krishna's feet -->
+    <ellipse cx="250" cy="580" rx="20" ry="10" />
+    <ellipse cx="350" cy="580" rx="20" ry="10" />
+  </g>
+</svg>

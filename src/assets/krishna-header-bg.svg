@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a237e" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#283593" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="haloGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffeb3b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffeb3b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Krishna silhouette in the center -->
+  <g transform="translate(600, 150) scale(0.8)" opacity="0.3" fill="#ffffff">
+    <!-- Krishna's head -->
+    <circle cx="0" cy="-50" r="40"/>
+    
+    <!-- Krishna's crown -->
+    <path d="M-30,-90 C-20,-110 20,-110 30,-90 L40,-120 L20,-95 L0,-130 L-20,-95 L-40,-120 Z"/>
+    
+    <!-- Peacock feather -->
+    <path d="M0,-130 C0,-160 0,-190 0,-220 M0,-220 C-20,-200 -40,-180 -60,-160 M0,-220 C20,-200 40,-180 60,-160" stroke-width="5" stroke="#ffffff" fill="none"/>
+    <circle cx="-60" cy="-160" r="10"/>
+    <circle cx="60" cy="-160" r="10"/>
+    
+    <!-- Krishna's body -->
+    <path d="M-40,-10 C-40,40 -30,80 0,100 C30,80 40,40 40,-10 Z"/>
+    
+    <!-- Krishna's arms -->
+    <path d="M-40,-10 C-60,10 -80,20 -100,10"/>
+    <path d="M40,-10 C60,10 80,20 100,10"/>
+    
+    <!-- Krishna's flute -->
+    <rect x="-80" y="0" width="160" height="10" rx="5"/>
+    <circle cx="-60" cy="5" r="5"/>
+    <circle cx="-30" cy="5" r="5"/>
+    <circle cx="0" cy="5" r="5"/>
+    <circle cx="30" cy="5" r="5"/>
+    <circle cx="60" cy="5" r="5"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="600" cy="150" r="200" fill="url(#haloGradient)"/>
+  
+  <!-- Lotus flowers (subtle) -->
+  <g opacity="0.2" fill="#e91e63">
+    <circle cx="200" cy="100" r="20"/>
+    <circle cx="1000" cy="100" r="20"/>
+    <circle cx="200" cy="200" r="20"/>
+    <circle cx="1000" cy="200" r="20"/>
+  </g>
+</svg>

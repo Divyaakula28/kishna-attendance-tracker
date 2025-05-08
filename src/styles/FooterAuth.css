@@ -1,0 +1,93 @@
+/* Footer Auth Styles */
+.footer-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.footer-auth-signed-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer-email {
+  font-size: 14px;
+  text-align: center;
+  color: #ffd700; /* Krishna gold */
+  font-weight: bold;
+}
+
+.krishna-icon {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.footer-sign-out {
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffd700; /* Krishna gold */
+}
+
+.footer-sign-in {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffd700; /* Krishna gold */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .footer-auth {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .footer-auth-signed-in {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-email {
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .footer-sign-out,
+  .footer-sign-in {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+  }
+}

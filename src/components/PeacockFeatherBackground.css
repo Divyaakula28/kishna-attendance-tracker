@@ -1,0 +1,203 @@
+.peacock-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+
+@keyframes move {
+  0% {
+    transform: rotateZ(20deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: rotateZ(40deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotateZ(10deg);
+    opacity: 0.8;
+  }
+}
+
+/* position of each feather ---------------------------------- */
+.feather1, .feather2, .feather3, .feather4, .feather5 {
+  position: absolute;
+  left: 5vmin;
+  top: 20vmin;
+  transform: rotate(-10deg);
+  filter: drop-shadow(-1vmin 0vmin 5vmin rgba(70, 64, 39, 0.7));
+  animation: move 3000ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.feather2 {
+  position: absolute;
+  top: 15vmin;
+  left: 35vmin;
+  transform: rotate(-5deg);
+  animation: move 3200ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.feather3 {
+  top: 30vmin;
+  left: 15vmin;
+  transform: rotate(-15deg);
+  animation: move 3400ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.feather4 {
+  top: 25vmin;
+  left: 40vmin;
+  transform: rotate(5deg);
+  animation: move 3600ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.feather5 {
+  top: 5vmin;
+  left: 20vmin;
+  transform: rotate(0deg);
+  animation: move 3800ms ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.middle-feather-line {
+  position: absolute;
+  top: 25vmin;
+  left: 30vmin;
+  height: 70vmin;
+  width: 0.5vmin;
+  background: linear-gradient(270deg, #9E9552 -1%, #433F22 105%);
+  transform: rotate(55deg);
+}
+
+/* colorful rounded part -------------------------- */
+.blue-circle, .middle-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.blue-circle {
+  position: absolute;
+  top: 35vmin;
+  left: 44vmin;
+  width: 16vmin;
+  height: 13vmin;
+  background: radial-gradient(63.92% 63.92% at 51.46% 36.08%, #1A4CFF 6.65%, #2A3FBF 27.14%, #3B5EE8 50.62%, #0A9FFF 54.4%, #00A3B0 63.46%, #6FFFFF 93.99%, #0A7F5C 100%);
+  transform: rotate(46.6deg);
+  filter: drop-shadow(0 0 5px rgba(26, 76, 255, 0.5));
+}
+
+.middle-circle {
+  top: 20vmin;
+  left: 40vmin;
+  width: 40vmin;
+  height: 33vmin;
+  background: radial-gradient(74.24% 73.52% at 36.23% 52.27%, #FFE066 0.19%, #FFBB33 21.93%, #CC7722 39.7%, #886633 41.19%, rgba(174, 255, 122, 0.8) 47.03%, rgba(11, 154, 18, 0.8) 49.35%, rgba(27, 88, 19, 0.7) 65%);
+  transform: rotate(-23.6deg);
+  box-shadow:
+      -20vmin 6vmin 6vmin rgba(70, 64, 39, 0.6),
+      -35vmin 8vmin 6vmin rgba(255, 215, 0, 0.4);
+}
+
+/* vertical lines on feather -------------------------------------- */
+/* round base behind the colorful part -------------- */
+.base-feather {
+  position: absolute;
+  top: 21vmin;
+  left: 41vmin;
+  width: 40vmin;
+  height: 32vmin;
+  border-radius: 50%;
+  background: transparent;
+  background-image: linear-gradient(-180deg, rgba(82, 75, 38, 0.4) 60.59%, #464027 16.94%);
+  background-size: 1vmin 0.6vmin;
+  transform: rotate(150deg);
+  box-shadow: inset -2vmin 0.5vmin 0vmin rgba(70, 64, 39, 0.3),
+              5vmin -1vmin 5vmin 0vmin rgba(70, 64, 39, 0.7);
+}
+
+/* feather strait lines around the main feather line,
+::before is above the line and ::after below --------------------------------*/
+.base-feather::before, .base-feather::after {
+  content: '';
+  position: absolute;
+  top: 11vmin;
+  left: 38vmin;
+  height: 20vmin;
+  width: 40vmin;
+  background: transparent;
+  background-image: linear-gradient(90.2deg, #464027 -0.08%, rgba(196, 196, 196, 0) 3.44%, rgba(112, 98, 57, 0) 15.15%, #464027 17.49%, rgba(112, 98, 57, 0) 17.5%, rgba(112, 98, 57, 0) 30.96%, #464027 33.89%, rgba(112, 98, 57, 0) 33.9%, rgba(112, 98, 57, 0) 58.49%, #464027 62.01%, rgba(112, 98, 57, 0) 62.02%, rgba(112, 98, 57, 0) 81.91%, #464027 81.92%, rgba(112, 98, 57, 0) 84.27%, rgba(112, 98, 57, 0) 95.98%, #464027 100.08%, rgba(112, 98, 57, 0) 105.94%);
+  background-size: 6vmin;
+  transform: skewX(-56deg) rotate(-8deg);
+  box-shadow: -4vmin -2vmin 2vmin rgba(70, 64, 39, 0.9),
+        inset 2vmin 1vmin 1vmin rgba(70, 64, 39, 0.9);
+}
+
+.base-feather::after {
+  top: 0vmin;
+  left: 30vmin;
+  height: 10vmin;
+  width: 50vmin;
+  transform: skewX(60deg) rotate(-3deg);
+  box-shadow: -8vmin 2vmin 2vmin rgba(70, 64, 39, 0.9),
+      inset 0vmin -2vmin 2vmin rgba(70, 64, 39, 0.9);
+}
+
+/* rounded feather lines, added for more realistic look ----------------------- */
+.line-feather-1, .line-feather-1::before, .line-feather-1::after,
+.line-feather-2, .line-feather-2::before, .line-feather-2::after,
+.line-feather-3, .line-feather-3::before, .line-feather-3::after {
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0.2vmin 0 0 0 rgba(70, 64, 39, 0.9);
+  transform: rotate(20deg);
+  height: 25vmin;
+  width: 10vmin;
+}
+
+.line-feather-1 {
+  top: 33vmin;
+  left: 30vmin;
+}
+
+.line-feather-2 {
+  top: 40vmin;
+  left: 20vmin;
+}
+
+.line-feather-3 {
+  top: 43vmin;
+  left: 15vmin;
+}
+
+.line-feather-1::before, .line-feather-2::before, .line-feather-3::before {
+   content: '';
+   top: 15vmin;
+   left: 10vmin;
+   box-shadow: -0.2vmin -0.2vmin 0 0 rgba(70, 64, 39, 0.9);
+   transform: rotate(80deg);
+}
+
+.line-feather-1::after, .line-feather-2::after, .line-feather-3::after {
+  content: '';
+  top: 8vmin;
+  left: 16vmin;
+  box-shadow: -0.2vmin -0.2vmin 0 0 rgba(70, 64, 39, 0.9);
+  transform: rotate(80deg);
+}

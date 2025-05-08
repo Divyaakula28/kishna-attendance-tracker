@@ -1,0 +1,202 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Custom FontAwesome-style flute icon */
+.fa-thin.fa-flute {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/flute-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+/* Custom FontAwesome-style dharmachakra icon */
+.fa-regular.fa-dharmachakra {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/dharmachakra-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+/* Custom Krishna-themed icons */
+.fa-solid.fa-namam {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/namam-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+.fa-solid.fa-peacock-feather {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/peacock-feather-icon.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+.fa-solid.fa-flower {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/flower-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+.fa-solid.fa-cow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url('./assets/cow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
+}
+
+/* Krishna Theme Header Styles */
+.krishna-theme-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: linear-gradient(135deg, #1a237e, #283593);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.krishna-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.krishna-title h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.krishna-icons-left, .krishna-icons-right {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.namam-large {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .krishna-theme-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .krishna-icons-left, .krishna-icons-right {
+    display: none;
+  }
+}
+
+/* Footer icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  margin-top: 2rem;
+}

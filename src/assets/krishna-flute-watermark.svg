@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.08" fill="#1a237e">
+    <!-- Flute -->
+    <rect x="100" y="256" width="312" height="20" rx="10" />
+    <!-- Flute holes -->
+    <circle cx="150" cy="266" r="8" />
+    <circle cx="200" cy="266" r="8" />
+    <circle cx="250" cy="266" r="8" />
+    <circle cx="300" cy="266" r="8" />
+    <circle cx="350" cy="266" r="8" />
+    <!-- Peacock feather -->
+    <path d="M400 256 C420 236, 440 216, 460 196 C440 216, 420 236, 400 256 Z" stroke-width="10" stroke="#1a237e" fill="none" />
+    <path d="M400 256 C420 276, 440 296, 460 316 C440 296, 420 276, 400 256 Z" stroke-width="10" stroke="#1a237e" fill="none" />
+    <circle cx="460" cy="196" r="15" />
+    <circle cx="460" cy="316" r="15" />
+  </g>
+</svg>

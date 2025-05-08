@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a237e" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#283593" stop-opacity="1"/>
+    </linearGradient>
+    <radialGradient id="haloGradient" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#ffeb3b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffeb3b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Divine light behind Krishna -->
+  <circle cx="600" cy="150" r="200" fill="url(#haloGradient)"/>
+  
+  <!-- Krishna detailed silhouette -->
+  <g transform="translate(600, 150) scale(1)" opacity="0.4" fill="#ffffff">
+    <!-- Krishna's face -->
+    <circle cx="0" cy="-60" r="40"/>
+    
+    <!-- Krishna's crown -->
+    <path d="M-35,-100 C-25,-120 25,-120 35,-100 L45,-130 L25,-105 L0,-140 L-25,-105 L-45,-130 Z"/>
+    
+    <!-- Peacock feather -->
+    <path d="M0,-140 C0,-170 0,-200 0,-230 M0,-230 C-20,-210 -40,-190 -60,-170 M0,-230 C20,-210 40,-190 60,-170" stroke-width="5" stroke="#ffffff" fill="none"/>
+    <circle cx="-60" cy="-170" r="10"/>
+    <circle cx="60" cy="-170" r="10"/>
+    
+    <!-- Krishna's body -->
+    <path d="M-40,-20 C-40,30 -30,70 0,90 C30,70 40,30 40,-20 Z"/>
+    
+    <!-- Krishna's arms -->
+    <path d="M-40,-20 C-60,0 -80,10 -100,0"/>
+    <path d="M40,-20 C60,0 80,10 100,0"/>
+    
+    <!-- Krishna's flute -->
+    <rect x="-80" y="-10" width="160" height="10" rx="5"/>
+    <circle cx="-60" cy="-5" r="5"/>
+    <circle cx="-30" cy="-5" r="5"/>
+    <circle cx="0" cy="-5" r="5"/>
+    <circle cx="30" cy="-5" r="5"/>
+    <circle cx="60" cy="-5" r="5"/>
+    
+    <!-- Krishna's facial features (simplified) -->
+    <circle cx="-15" cy="-65" r="5"/>
+    <circle cx="15" cy="-65" r="5"/>
+    <path d="M-10,-45 C-5,-40 5,-40 10,-45" stroke="#ffffff" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <!-- Lotus flowers -->
+  <g opacity="0.2" fill="#e91e63">
+    <circle cx="200" cy="100" r="20"/>
+    <circle cx="1000" cy="100" r="20"/>
+    <circle cx="200" cy="200" r="20"/>
+    <circle cx="1000" cy="200" r="20"/>
+  </g>
+  
+  <!-- Peacock feather pattern (subtle) -->
+  <g opacity="0.1" fill="#4fc3f7">
+    <path d="M100,250 C150,230 200,250 250,230 C300,210 350,230 400,210" stroke-width="3" stroke="#4fc3f7" fill="none"/>
+    <path d="M800,250 C850,230 900,250 950,230 C1000,210 1050,230 1100,210" stroke-width="3" stroke="#4fc3f7" fill="none"/>
+  </g>
+  
+  <!-- Stars/sparkles -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="300" cy="50" r="2"/>
+    <circle cx="350" cy="80" r="1"/>
+    <circle cx="400" cy="40" r="2"/>
+    <circle cx="450" cy="70" r="1"/>
+    <circle cx="500" cy="30" r="2"/>
+    <circle cx="700" cy="50" r="2"/>
+    <circle cx="750" cy="80" r="1"/>
+    <circle cx="800" cy="40" r="2"/>
+    <circle cx="850" cy="70" r="1"/>
+    <circle cx="900" cy="30" r="2"/>
+  </g>
+</svg>
